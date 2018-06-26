@@ -1,0 +1,19 @@
+<div class="col-md-12">
+	<h1>My tasks</h1>
+	<%= link_to "Next task", new_task_path, class: 'btn btn-primary' %>
+	
+	<div class="buffer-top">
+		<% @tasks.each do |task| %>
+			<%= render partial: 'task', object: task %>
+		<% end %>
+	</div>
+		
+	<hr>
+	
+	<div class="buffer-top">
+		<% @completed_tasks.each do |task| %>
+			<%= render partial: 'task', object: task %>
+		<% end %>
+	</div>
+
+</div>
