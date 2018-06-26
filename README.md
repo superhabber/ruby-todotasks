@@ -1,6 +1,6 @@
 # A ruby TODO list
 
-##site
+## Site
 Login **superhabber**
 password **admin**
 
